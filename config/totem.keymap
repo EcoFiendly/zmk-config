@@ -43,7 +43,7 @@
         semcom: semcom {
             compatible = "zmk,behavior-mod-morph";
             label = "SEMCOM";
-            bindings = <&kp KP_COMMA>, <&kp SEMICOLON>;
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -52,7 +52,7 @@
         coldot: coldot {
             compatible = "zmk,behavior-mod-morph";
             label = "COLDOT";
-            bindings = <&kp KP_DOT>, <&kp COLON>;
+            bindings = <&kp PERIOD>, <&kp COLON>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -193,3 +193,4 @@
         };
     };
 };
+
