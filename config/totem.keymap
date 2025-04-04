@@ -79,11 +79,11 @@
             bindings = <&lt 1 RET>, <&none>, <&tog 1>;
         };
 
-        bspc_4: bspc_4 {
+        del_4: del_4 {
             compatible = "zmk,behavior-tap-dance";
-            label = "BSPC_4";
+            label = "DEL_4";
             #binding-cells = <0>;
-            bindings = <&lt 4 BSPC>, <&none>, <&tog 4>;
+            bindings = <&lt 4 DELETE>, <&none>, <&tog 4>;
         };
     };
 
@@ -145,10 +145,10 @@
         Base {
             display-name = "Base";
             bindings = <
-           &kp Q       &kp W        &kp F       &kp P        &kp B     &kp J   &kp L        &kp U       &kp Y        &kp BSLH
-           &hm LALT A  &hm LCTRL R  &hm LGUI S  &hm LSHFT T  &kp G     &kp M   &hm RSHFT N  &hm RGUI E  &hm RCTRL I  &hm RALT O
-&kp EQUAL  &kp Z       &kp X        &kp C       &kp D        &kp V     &kp K   &kp H        &semcom     &coldot      &qexcl      &kp APOSTROPHE
-                                    &gresc      &spc_3       &tab_2    &ent_1  &bspc_4      &kp DELETE
+           &kp Q       &kp W        &kp F       &kp P        &kp B     &kp J   &kp L          &kp U       &kp Y        &kp BSLH
+           &hm LALT A  &hm LCTRL R  &hm LGUI S  &hm LSHFT T  &kp G     &kp M   &hm RSHFT N    &hm RGUI E  &hm RCTRL I  &hm RALT O
+&kp EQUAL  &kp Z       &kp X        &kp C       &kp D        &kp V     &kp K   &kp H          &semcom     &coldot      &qexcl      &kp APOSTROPHE
+                                    &gresc      &spc_3       &tab_2    &ent_1  &kp BACKSPACE  &del_4
             >;
         };
 
