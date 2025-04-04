@@ -83,7 +83,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BSPC_4";
             #binding-cells = <0>;
-            bindings = <&lt 4 SPACE>, <&none>, <&tog 4>;
+            bindings = <&lt 4 BSPC>, <&none>, <&tog 4>;
         };
     };
 
@@ -193,4 +193,3 @@
         };
     };
 };
-
