@@ -9,11 +9,10 @@
     quick-tap-ms = <175>;
     flavor = "balanced";
     tapping-term-ms = <210>;
-    require-prior-idle-ms = <130>;
 };
 
 &lt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <210>;
     flavor = "balanced";
     quick-tap-ms = <175>;
 };
@@ -24,11 +23,13 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
+
+            require-prior-idle-ms = <150>;
         };
 
         qexcl: qexcl {
@@ -193,3 +194,4 @@
         };
     };
 };
+
