@@ -12,8 +12,8 @@
 };
 
 &lt {
-    tapping-term-ms = <210>;
-    flavor = "balanced";
+    tapping-term-ms = <200>;
+    flavor = "hold-preferred";
     quick-tap-ms = <175>;
 };
 
@@ -64,6 +64,8 @@
             label = "SPC_3";
             #binding-cells = <0>;
             bindings = <&lt 3 SPACE>, <&none>, <&tog 3>;
+
+            tapping-term-ms = <150>;
         };
 
         tab_2: tab_2 {
@@ -71,6 +73,8 @@
             label = "TAB_2";
             #binding-cells = <0>;
             bindings = <&lt 2 TAB>, <&none>, <&tog 2>;
+
+            tapping-term-ms = <150>;
         };
 
         ent_1: ent_1 {
@@ -78,6 +82,8 @@
             label = "ENT_1";
             #binding-cells = <0>;
             bindings = <&lt 1 RET>, <&none>, <&tog 1>;
+
+            tapping-term-ms = <150>;
         };
 
         del_4: del_4 {
@@ -85,6 +91,8 @@
             label = "DEL_4";
             #binding-cells = <0>;
             bindings = <&lt 4 DELETE>, <&none>, <&tog 4>;
+
+            tapping-term-ms = <150>;
         };
     };
 
@@ -194,3 +202,4 @@
         };
     };
 };
+
