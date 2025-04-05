@@ -1,6 +1,6 @@
+#include "../zmk-helpers/key-labels/totem.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include "../zmk-helpers/key-labels/totem.h"
 
 #define Base        0
 #define Nav         1
@@ -16,9 +16,9 @@
 };
 
 &lt {
-    tapping-term-ms = <175>;
+    tapping-term-ms = <150>;
     flavor = "balanced";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <100>;
 };
 
 / {
