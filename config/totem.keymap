@@ -10,9 +10,9 @@
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // Thumb keys.
 
 &mt {
-    quick-tap-ms = <175>;
+    quick-tap-ms = <150>;
     flavor = "balanced";
-    tapping-term-ms = <210>;
+    tapping-term-ms = <175>;
 };
 
 &lt {
@@ -44,6 +44,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = < KEYS_L THUMBS >; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
+        };
 
         qexcl: qexcl {
             compatible = "zmk,behavior-mod-morph";
