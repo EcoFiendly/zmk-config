@@ -16,9 +16,9 @@
 };
 
 &lt {
-    tapping-term-ms = <150>;
+    tapping-term-ms = <100>;
     flavor = "hold-preferred";
-    quick-tap-ms = <100>;
+    quick-tap-ms = <85>;
 };
 
 / {
@@ -27,7 +27,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <80>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
@@ -40,7 +40,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <80>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
@@ -80,35 +80,45 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SPC_3";
             #binding-cells = <0>;
-            bindings = <&lt 3 SPACE>, <&kp SPACE>, <&tog 3>;
+            bindings = <&lt 3 SPACE>, <&none>, <&tog 3>;
+
+            tapping-term-ms = <70>;
         };
 
         tab_2: tab_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAB_2";
             #binding-cells = <0>;
-            bindings = <&lt 2 TAB>, <&kp TAB>, <&tog 2>;
+            bindings = <&lt 2 TAB>, <&none>, <&tog 2>;
+
+            tapping-term-ms = <70>;
         };
 
         ent_1: ent_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "ENT_1";
             #binding-cells = <0>;
-            bindings = <&lt 1 RET>, <&kp ENTER>, <&tog 1>;
+            bindings = <&lt 1 RET>, <&none>, <&tog 1>;
+
+            tapping-term-ms = <70>;
         };
 
         bspc_4: bspc_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "BSPC_4";
             #binding-cells = <0>;
-            bindings = <&lt 4 BACKSPACE>, <&kp BACKSPACE>, <&tog 4>;
+            bindings = <&lt 4 BACKSPACE>, <&none>, <&tog 4>;
+
+            tapping-term-ms = <70>;
         };
 
         del_5: del_5 {
             compatible = "zmk,behavior-tap-dance";
             label = "DEL_5";
             #binding-cells = <0>;
-            bindings = <&lt 5 DELETE>, <&kp DELETE>, <&tog 5>;
+            bindings = <&lt 5 DELETE>, <&none>, <&tog 5>;
+
+            tapping-term-ms = <70>;
         };
     };
 
