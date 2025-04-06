@@ -19,7 +19,7 @@
     tapping-term-ms = <250>;
     flavor = "balanced";
     quick-tap-ms = <175>;
-    require-prior-idle-ms = <150>;
+    require-prior-idle-ms = <140>;
 };
 
 / {
@@ -29,7 +29,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             require-prior-idle-ms = <125>;
-            tapping-term-ms = <265>;
+            tapping-term-ms = <210>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
@@ -42,7 +42,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             require-prior-idle-ms = <125>;
-            tapping-term-ms = <265>;
+            tapping-term-ms = <210>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
@@ -81,35 +81,35 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SPC_3";
             #binding-cells = <0>;
-            bindings = <&lt 3 SPACE>, <&none>, <&tog 3>;
+            bindings = <&lt 3 SPACE>, <&kp SPACE>, <&none>, <&tog 3>;
         };
 
         tab_2: tab_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAB_2";
             #binding-cells = <0>;
-            bindings = <&lt 2 TAB>, <&none>, <&tog 2>;
+            bindings = <&lt 2 TAB>, <&kp TAB>, <&none>, <&tog 2>;
         };
 
         ent_1: ent_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "ENT_1";
             #binding-cells = <0>;
-            bindings = <&lt 1 RET>, <&none>, <&tog 1>;
+            bindings = <&lt 1 RET>, <&kp ENTER>, <&none>, <&tog 1>;
         };
 
         bspc_4: bspc_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "BSPC_4";
             #binding-cells = <0>;
-            bindings = <&lt 4 BACKSPACE>, <&none>, <&tog 4>;
+            bindings = <&lt 4 BACKSPACE>, <&kp BACKSPACE>, <&none>, <&tog 4>;
         };
 
         del_5: del_5 {
             compatible = "zmk,behavior-tap-dance";
             label = "DEL_5";
             #binding-cells = <0>;
-            bindings = <&lt 5 DELETE>, <&none>, <&tog 5>;
+            bindings = <&lt 5 DELETE>, <&kp DELETE>, <&none>, <&tog 5>;
         };
     };
 
