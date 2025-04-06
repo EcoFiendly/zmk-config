@@ -169,6 +169,18 @@
             key-positions = <8 18>;
             layers = <0>;
         };
+
+        Slash {
+            bindings = <&kp KP_SLASH>;
+            key-positions = <6 16>;
+            layers = <0>;
+        };
+
+        Multiply {
+            bindings = <&kp KP_ASTERISK>;
+            key-positions = <9 19>;
+            layers = <0>;
+        };
     };
 
     keymap {
