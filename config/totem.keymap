@@ -27,9 +27,9 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             require-prior-idle-ms = <115>;
-            tapping-term-ms = <210>;
+            tapping-term-ms = <205>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R THUMBS >; // List of keys on the right side of the keyboard
@@ -39,9 +39,9 @@
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             require-prior-idle-ms = <115>;
-            tapping-term-ms = <210>;
+            tapping-term-ms = <205>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = < KEYS_L THUMBS >; // List of keys on the left side of the keyboard
