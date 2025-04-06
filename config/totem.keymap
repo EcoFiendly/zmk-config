@@ -17,7 +17,7 @@
 
 &lt {
     tapping-term-ms = <205>;
-    flavor = "tap-unless-interrupted";
+    flavor = "tap-preferred";
 };
 
 / {
@@ -25,7 +25,7 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             tapping-term-ms = <205>;
             bindings = <&kp>, <&kp>;
 
@@ -36,7 +36,7 @@
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             tapping-term-ms = <205>;
             bindings = <&kp>, <&kp>;
 
