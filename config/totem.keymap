@@ -16,9 +16,9 @@
 };
 
 &lt {
-    tapping-term-ms = <175>;
+    tapping-term-ms = <155>;
     flavor = "balanced";
-    require-prior-idle-ms = <200>;
+    require-prior-idle-ms = <150>;
 };
 
 / {
@@ -27,7 +27,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <205>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R THUMBS 5 15 26 6 16 27 7 8 9 17 18 19 28 29 30 31>; // List of keys on the right side of the keyboard
@@ -40,7 +40,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <205>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L THUMBS 0 1 3 4 10 11 12 13 14 22 23 24 25 21 20 2>; // List of keys on the left side of the keyboard
@@ -184,6 +184,18 @@
         Multiply {
             bindings = <&kp KP_ASTERISK>;
             key-positions = <9 19>;
+            layers = <0>;
+        };
+
+        langle {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <17 28>;
+            layers = <0>;
+        };
+
+        rangle {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <18 29>;
             layers = <0>;
         };
     };
