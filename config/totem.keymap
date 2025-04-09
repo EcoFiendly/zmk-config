@@ -104,7 +104,7 @@
             #binding-cells = <0>;
             bindings = <&lt 1 RET>, <&kp ENTER>, <&none>, <&tog 1>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <80>;
         };
 
         k_4: k_4 {
