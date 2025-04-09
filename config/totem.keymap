@@ -81,15 +81,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        v_3: v_3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "V_3";
-            #binding-cells = <0>;
-            bindings = <&lt 3 V>, <&kp V>, <&none>, <&tog 3>;
-
-            tapping-term-ms = <145>;
-        };
-
         tab_2: tab_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAB_2";
@@ -108,15 +99,6 @@
             tapping-term-ms = <145>;
         };
 
-        k_4: k_4 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "K_4";
-            #binding-cells = <0>;
-            bindings = <&lt 4 K>, <&kp K>, <&none>, <&tog 4>;
-
-            tapping-term-ms = <145>;
-        };
-
         del_5: del_5 {
             compatible = "zmk,behavior-tap-dance";
             label = "DEL_5";
@@ -126,11 +108,11 @@
             tapping-term-ms = <145>;
         };
 
-        space_3: space_3 {
+        gresc_3: gresc_3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "SPACE_3";
+            label = "GRESC_3";
             #binding-cells = <0>;
-            bindings = <&lt 3 SPACE>, <&none>, <&none>, <&tog 3>;
+            bindings = <&gresc>, <&none>, <&none>, <&tog 3>;
 
             tapping-term-ms = <145>;
         };
@@ -249,7 +231,7 @@
        &kp Q          &kp W         &kp F        &kp P        &kp B     &kp J   &kp L        &kp U        &kp Y         &kp BSLH
        &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LGUI T  &kp G     &kp M   &hmr RGUI N  &hmr RALT E  &hmr RCTRL I  &hmr RSHIFT O
 &none  &kp Z          &kp X         &kp C        &kp D        &kp V     &kp K   &kp H        &semcom      &coldot       &qexcl         &kp APOSTROPHE
-                                    &gresc       &space_3     &tab_2    &ent_1  &bspace_4    &del_5
+                                    &gresc_3     &kp SPACE    &tab_2    &ent_1  &bspace_4    &del_5
             >;
         };
 
