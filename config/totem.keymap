@@ -87,7 +87,7 @@
             #binding-cells = <0>;
             bindings = <&lt 2 TAB>, <&kp TAB>, <&none>, <&tog 2>;
 
-            tapping-term-ms = <145>;
+            tapping-term-ms = <150>;
         };
 
         ent_1: ent_1 {
@@ -96,16 +96,16 @@
             #binding-cells = <0>;
             bindings = <&lt 1 RET>, <&kp ENTER>, <&none>, <&tog 1>;
 
-            tapping-term-ms = <145>;
+            tapping-term-ms = <150>;
         };
 
-        del_5: del_5 {
+        del_4: del_4 {
             compatible = "zmk,behavior-tap-dance";
-            label = "DEL_5";
+            label = "DEL_4";
             #binding-cells = <0>;
-            bindings = <&lt 5 DELETE>, <&kp DELETE>, <&none>, <&tog 5>;
+            bindings = <&lt 4 DELETE>, <&kp DELETE>, <&none>, <&tog 4>;
 
-            tapping-term-ms = <145>;
+            tapping-term-ms = <150>;
         };
 
         gresc_3: gresc_3 {
@@ -114,16 +114,25 @@
             #binding-cells = <0>;
             bindings = <&gresc>, <&none>, <&none>, <&tog 3>;
 
-            tapping-term-ms = <145>;
+            tapping-term-ms = <150>;
         };
 
-        bspace_4: bspace_4 {
+        bspace_1: bspace_1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "BSPACE_4";
+            label = "BSPACE_1";
             #binding-cells = <0>;
-            bindings = <&lt 4 BACKSPACE>, <&none>, <&none>, <&tog 4>;
+            bindings = <&lt 1 BACKSPACE>, <&none>, <&none>, <&tog 1>;
 
-            tapping-term-ms = <145>;
+            tapping-term-ms = <150>;
+        };
+
+        apostrophe_5: apostrophe_5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "APOSTROPHE_5";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&none>, <&none>, <&tog 5>;
+
+            tapping-term-ms = <150>;
         };
     };
 
@@ -228,10 +237,10 @@
         Base {
             display-name = "Base";
             bindings = <
-       &kp Q          &kp W         &kp F        &kp P        &kp B     &kp J   &kp L        &kp U        &kp Y         &kp BSLH
-       &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LGUI T  &kp G     &kp M   &hmr RGUI N  &hmr RALT E  &hmr RCTRL I  &hmr RSHIFT O
-&none  &kp Z          &kp X         &kp C        &kp D        &kp V     &kp K   &kp H        &semcom      &coldot       &qexcl         &kp APOSTROPHE
-                                    &gresc_3     &kp SPACE    &tab_2    &ent_1  &bspace_4    &del_5
+       &kp Q          &kp W         &kp F        &kp P        &kp B     &kp J      &kp L        &kp U        &kp Y         &kp BSLH
+       &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LGUI T  &kp G     &kp M      &hmr RGUI N  &hmr RALT E  &hmr RCTRL I  &hmr RSHIFT O
+&none  &kp Z          &kp X         &kp C        &kp D        &kp V     &kp K      &kp H        &semcom      &coldot       &qexcl         &apostrophe_5
+                                    &gresc_3     &kp SPACE    &tab_2    &kp ENTER  &bspace_1    &del_4
             >;
         };
 
