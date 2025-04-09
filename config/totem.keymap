@@ -12,13 +12,14 @@
 &mt {
     quick-tap-ms = <150>;
     flavor = "tap-preferred";
-    tapping-term-ms = <150>;
+    tapping-term-ms = <110>;
+    require-prior-idle-ms = <125>;
 };
 
 &lt {
-    tapping-term-ms = <130>;
+    tapping-term-ms = <100>;
     flavor = "tap-preferred";
-    require-prior-idle-ms = <155>;
+    require-prior-idle-ms = <175>;
     hold-trigger-key-positions = <>;
 };
 
@@ -85,7 +86,7 @@
             #binding-cells = <0>;
             bindings = <&lt 3 V>, <&kp V>, <&none>, <&tog 3>;
 
-            tapping-term-ms = <175>;
+            tapping-term-ms = <100>;
         };
 
         tab_2: tab_2 {
@@ -94,7 +95,7 @@
             #binding-cells = <0>;
             bindings = <&lt 2 TAB>, <&kp TAB>, <&none>, <&tog 2>;
 
-            tapping-term-ms = <155>;
+            tapping-term-ms = <100>;
         };
 
         ent_1: ent_1 {
@@ -103,7 +104,7 @@
             #binding-cells = <0>;
             bindings = <&lt 1 RET>, <&kp ENTER>, <&none>, <&tog 1>;
 
-            tapping-term-ms = <155>;
+            tapping-term-ms = <100>;
         };
 
         k_4: k_4 {
@@ -112,7 +113,7 @@
             #binding-cells = <0>;
             bindings = <&lt 4 K>, <&kp K>, <&none>, <&tog 4>;
 
-            tapping-term-ms = <175>;
+            tapping-term-ms = <100>;
         };
 
         del_5: del_5 {
@@ -120,6 +121,8 @@
             label = "DEL_5";
             #binding-cells = <0>;
             bindings = <&lt 5 DELETE>, <&kp DELETE>, <&none>, <&tog 5>;
+
+            tapping-term-ms = <100>;
         };
     };
 
