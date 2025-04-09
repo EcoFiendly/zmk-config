@@ -17,11 +17,11 @@
 };
 
 &lt {
-    tapping-term-ms = <125>;
+    tapping-term-ms = <170>;
     flavor = "tap-unless-interrupted";
     require-prior-idle-ms = <170>;
     hold-trigger-key-positions = <>;
-    quick-tap-ms = <125>;
+    quick-tap-ms = <145>;
 };
 
 / {
