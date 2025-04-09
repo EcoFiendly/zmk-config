@@ -16,7 +16,7 @@
 };
 
 &lt {
-    tapping-term-ms = <155>;
+    tapping-term-ms = <150>;
     flavor = "tap-preferred";
     require-prior-idle-ms = <150>;
 };
@@ -83,6 +83,8 @@
             label = "V_3";
             #binding-cells = <0>;
             bindings = <&lt 3 V>, <&kp V>, <&none>, <&tog 3>;
+
+            tapping-term-ms = <175>;
         };
 
         tab_2: tab_2 {
@@ -90,6 +92,8 @@
             label = "TAB_2";
             #binding-cells = <0>;
             bindings = <&lt 2 TAB>, <&kp TAB>, <&none>, <&tog 2>;
+
+            tapping-term-ms = <155>;
         };
 
         ent_1: ent_1 {
@@ -97,6 +101,8 @@
             label = "ENT_1";
             #binding-cells = <0>;
             bindings = <&lt 1 RET>, <&kp ENTER>, <&none>, <&tog 1>;
+
+            tapping-term-ms = <155>;
         };
 
         k_4: k_4 {
@@ -104,6 +110,8 @@
             label = "K_4";
             #binding-cells = <0>;
             bindings = <&lt 4 K>, <&kp K>, <&none>, <&tog 4>;
+
+            tapping-term-ms = <175>;
         };
 
         del_5: del_5 {
