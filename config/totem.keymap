@@ -108,11 +108,11 @@
             tapping-term-ms = <150>;
         };
 
-        gresc_3: gresc_3 {
+        esc_3: esc_3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "GRESC_3";
+            label = "ESC_3";
             #binding-cells = <0>;
-            bindings = <&gresc>, <&none>, <&none>, <&tog 3>;
+            bindings = <&lt 3 ESCAPE>, <&none>, <&none>, <&tog 3>;
 
             tapping-term-ms = <150>;
         };
@@ -237,10 +237,10 @@
         Base {
             display-name = "Base";
             bindings = <
-       &kp Q          &kp W         &kp F        &kp P        &kp B     &kp J      &kp L        &kp U        &kp Y         &kp BSLH
-       &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LGUI T  &kp G     &kp M      &hmr RGUI N  &hmr RALT E  &hmr RCTRL I  &hmr RSHIFT O
-&none  &kp Z          &kp X         &kp C        &kp D        &kp V     &kp K      &kp H        &semcom      &coldot       &qexcl         &apostrophe_5
-                                    &gresc_3     &kp SPACE    &tab_2    &kp ENTER  &bspace_1    &del_4
+           &kp Q          &kp W         &kp F        &kp P        &kp B     &kp J      &kp L        &kp U        &kp Y         &kp BSLH
+           &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LGUI T  &kp G     &kp M      &hmr RGUI N  &hmr RALT E  &hmr RCTRL I  &hmr RSHIFT O
+&kp GRAVE  &kp Z          &kp X         &kp C        &kp D        &kp V     &kp K      &kp H        &semcom      &coldot       &qexcl         &apostrophe_5
+                                        &esc_3       &kp SPACE    &tab_2    &kp ENTER  &bspace_1    &del_4
             >;
         };
 
