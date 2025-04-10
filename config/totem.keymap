@@ -24,6 +24,13 @@
     quick-tap-ms = <150>;
 };
 
+&lt_tui {
+    tapping-term-ms = <175>;
+    flavor = "tap-unless-interrupted";
+    require-prior-idle-ms = <145>;
+    hold-trigger-key-positions = <>;
+    quick-tap-ms = <150>;
+};
 / {
     behaviors {
         hml: home_row_mod_left {
@@ -103,7 +110,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DEL_4";
             #binding-cells = <0>;
-            bindings = <&lt 4 DELETE>, <&kp DELETE>, <&none>, <&tog 4>;
+            bindings = <&lt_tui 4 DELETE>, <&kp none>, <&none>, <&tog 4>;
 
             tapping-term-ms = <150>;
         };
@@ -121,7 +128,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BSPACE_1";
             #binding-cells = <0>;
-            bindings = <&lt 1 BACKSPACE>, <&none>, <&none>, <&tog 1>;
+            bindings = <&lt_tui 1 BACKSPACE>, <&none>, <&none>, <&tog 1>;
 
             tapping-term-ms = <150>;
         };
