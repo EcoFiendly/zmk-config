@@ -24,14 +24,6 @@
     quick-tap-ms = <150>;
 };
 
-&lt_tui {
-    tapping-term-ms = <175>;
-    flavor = "tap-unless-interrupted";
-    require-prior-idle-ms = <145>;
-    hold-trigger-key-positions = <>;
-    quick-tap-ms = <150>;
-};
-
 / {
     behaviors {
         hml: home_row_mod_left {
